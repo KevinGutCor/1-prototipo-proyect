@@ -71,8 +71,8 @@ header{
 }
 
 .camara{
-    height: 500px;
-    background-color: antiquewhite; 
+    /* height: 500px; */
+    background-color: rgb(255, 230, 197); 
 }
 
 .camara__container{
@@ -81,7 +81,7 @@ header{
     align-items: center;
 }
 
-.camara__img{
-    width: 50px;
+.camara__container img{
+    width: 280px;
+    margin: 30px 0;
 }
-
