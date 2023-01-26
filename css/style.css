@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:ital,wght@0,400;1,100;1,300&family=Roboto+Mono:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{font-size: 2.3rem;}
+h2{font-size: 1.8rem;}
+h3{font-size: 1.4rem;}
+p{font-size: 1.2rem;}
+a{text-decoration: none;}
+ul{list-style: none;}
+
+.btn__vmas{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 8px 20px;
+}
+
+.a__nav{
+    color: white;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+}
+
+.logo{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0;
+}
+
+.logo a{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.header__nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.hero{
+    width: 100vw;
+    height: 70vh;
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-negocio-abstracto-moderno-coloridas-formas-degradadas_1361-3354.jpg?w=2000);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero__text{
+    color: white;
+    text-transform: uppercase;
+}
+
+.camara{
+    height: 500px;
+    background-color: antiquewhite;
+}
+
+.camara__container{
+width: 100vw;
+height: 400px;
+}
+
+.camara__img{
+    width: 200px;
+    height: 80px;
+}
+
