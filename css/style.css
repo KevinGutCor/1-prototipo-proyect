@@ -72,16 +72,16 @@ header{
 
 .camara{
     height: 500px;
-    background-color: antiquewhite;
+    background-color: antiquewhite; 
 }
 
 .camara__container{
-width: 100vw;
-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .camara__img{
-    width: 200px;
-    height: 80px;
+    width: 50px;
 }
 
