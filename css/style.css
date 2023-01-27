@@ -42,6 +42,8 @@ ul{list-style: none;}
 body{
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    background: rgb(174,174,177);
+    background: linear-gradient(101deg, rgba(174,174,177,1) 0%, rgba(210,210,214,1) 53%, rgba(241,251,252,1) 100%);
 }
 
 header{
@@ -49,7 +51,6 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* width: 100vw; */
 }
 
 .logo{
@@ -66,6 +67,10 @@ header{
     display: flex;
     justify-content: space-around;
     padding-bottom: 10px;
+}
+
+.nosotros__btn{
+    color: rgb(77, 168, 253);
 }
 
 .hero{
@@ -91,7 +96,7 @@ header{
 
 .camara{
     /* width: 100vw; */
-    background-color: antiquewhite;
+    /* background-image: linear-gradient(to left ); */
 }
 
 .camara__container{
@@ -100,16 +105,16 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px auto;
 }
 
 .camara__container img{
     width: 280px;
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 .camara__title{
     text-transform: uppercase;
-    margin-top: 15px;
 }
 
 .camara__paragraph{
@@ -121,7 +126,7 @@ header{
 .lentes{
     background-color: black;
     color: white;
-    /* width: 100vw; */
+
 }
 
 .lentes__title{
@@ -132,9 +137,8 @@ header{
 .lentes__container{
     width: 85%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
 }
 
 .lentes__img{
@@ -167,7 +171,7 @@ header{
 .galeria__container{
     width: 85%;
     margin: 0 auto;
-    padding: 80px 0px;
+    padding: 70px 0px;
 }
 
 .galeria__text{
@@ -183,7 +187,7 @@ header{
 
 .accesorios{
     /* width: 100vw; */
-    background-color: rgb(189, 184, 178);
+    /* background-color: rgb(189, 184, 178); */
 }
 
 .accesorios__container{
@@ -239,7 +243,7 @@ header{
 
 .datos{
     /* width: 100vw; */
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 .datos__container{
@@ -275,3 +279,101 @@ header{
     padding: 15px 0;
     border-top: 5px solid yellow;
 }
+
+@media (min-width: 768px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding-left: 30px;
+    }
+
+    .header__nav{
+        padding-right: 10px;
+        padding-top: 20px;
+    }
+
+    .header__nav a{
+        padding-right: 30px;
+    }
+
+    .camara__container{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 20px 0px 40px 0px;
+    }
+
+    .camara__text{
+        margin-left: 30px;
+    }
+
+    .camara__container img{
+        width: 300px;
+        padding-right: 20px;
+    }
+
+    .lentes__container{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .lentes__cartas{
+        margin: 20px 10px;
+    }
+
+    .galeria__container{
+        margin: 0 auto;
+        padding: 90px 0px;
+    }
+
+    .accesorios__container{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0px 40px 0px;
+    }
+
+    .accesorios__text{
+        margin-right: 30px;
+    }
+
+    .accesorios__container img{
+        width: 300px;
+        padding-left: 20px;}
+
+    .nosotros__container{
+        flex-direction: row-reverse;
+        justify-content: space-between;            padding: 20px 0px 40px 0px;
+    }
+
+    .nosotros__text{
+        margin-left: 30px;
+    }
+
+    .nosotros__container img{
+        width: 300px;
+        padding-right: 20px;
+    }
+
+    .datos__container{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .datos__cartas{
+        margin:  30px 10px ;
+        padding: 10px 2px;
+    }
+
+    .item-1, .item-2{
+        border-bottom: none;
+        border-right: 1px solid black;
+    }
+}
+
+
+
