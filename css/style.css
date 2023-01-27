@@ -79,8 +79,6 @@ header{
 }
 
 .hero{
-    /* width: 100vw; */
-    /* height: 350px; */
     background-image: url(https://img.freepik.com/vector-gratis/fondo-negocio-abstracto-moderno-coloridas-formas-degradadas_1361-3354.jpg?w=2000);
     background-position: center;
     background-size: cover;
@@ -98,11 +96,6 @@ header{
 }
 
 /* Seccion camara */
-
-.camara{
-    /* width: 100vw; */
-    /* background-image: linear-gradient(to left ); */
-}
 
 .camara__container{
     width: 85%;
@@ -142,8 +135,6 @@ header{
 .lentes__container{
     width: 85%;
     margin: 0 auto;
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
