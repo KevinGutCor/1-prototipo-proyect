@@ -63,10 +63,15 @@ header{
     font-weight: bold;
     font-style: italic;
 }
+
 .header__nav ul{
     display: flex;
     justify-content: space-around;
     padding-bottom: 10px;
+}
+
+.header__nav a:hover{
+    background-color: rgb(25, 26, 26);
 }
 
 .nosotros__btn{
@@ -137,8 +142,10 @@ header{
 .lentes__container{
     width: 85%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .lentes__img{
@@ -155,7 +162,7 @@ header{
 }
 
 .lentes__paragraph{
-    padding: 10px 5px 15px 5px;
+    padding: 10px 5px 30px 5px;
 }
 
 /* seccion galería */
@@ -164,8 +171,6 @@ header{
     background-image: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000);
     background-position: center;
     background-size: cover;
-    /* width: 100vw; */
-    /* height: 400px; */
 }
 
 .galeria__container{
@@ -184,11 +189,6 @@ header{
 }
 
 /* seccion accesorios */
-
-.accesorios{
-    /* width: 100vw; */
-    /* background-color: rgb(189, 184, 178); */
-}
 
 .accesorios__container{
     width: 85%;
@@ -214,7 +214,6 @@ header{
 /* seccion nosotros */
 
 .nosotros{
-    /* width: 100vw; */
     background-color: black;
     color: white;
 }
@@ -241,16 +240,11 @@ header{
 
 /* seccion datos */
 
-.datos{
-    /* width: 100vw; */
-    /* background-color: antiquewhite; */
-}
-
 .datos__container{
     margin: auto;
     width: 85%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1, 1fr;
 }
 
 .datos__title{
@@ -316,8 +310,7 @@ header{
     }
 
     .lentes__container{
-        flex-direction: row;
-        justify-content: space-between;
+        grid-template-columns: repeat(3, 1fr);
         width: 95%;
     }
 
@@ -346,7 +339,9 @@ header{
 
     .nosotros__container{
         flex-direction: row-reverse;
-        justify-content: space-between;            padding: 20px 0px 40px 0px;
+        justify-content: space-between;
+        padding: 20px 0px 40px 0px;
+
     }
 
     .nosotros__text{
@@ -359,21 +354,79 @@ header{
     }
 
     .datos__container{
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1, 1fr;
         width: 100%;
     }
 
     .datos__cartas{
-        margin:  30px 10px ;
-        padding: 10px 2px;
+        margin: 20px 0px;
+        padding: 0px 5px;
     }
 
-    .item-1, .item-2{
+    .item-1{
+        border-bottom: none;
+    }
+    .item-2{
         border-bottom: none;
         border-right: 1px solid black;
+        border-left: 1px solid black;
     }
 }
+
+@media (min-width: 1024px){
+    .header__nav a{
+        padding: 20px 40px 21px 40px;
+    }
+
+    .logo{
+        padding-left: 50px;
+    }
+
+    .hero__container{
+        padding: 220px 0px;
+    }
+
+    .camara__container img{
+        width: 500px;
+    }
+
+    .lentes__cartas{
+        padding: 40px 20px 40px 20px;
+        margin: 40px 20px 50px 20px;
+    }
+
+    .lentes__img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .lentes__title{
+        padding-top: 40px;
+    }
+
+    .galeria__container{
+        padding: 180px;
+    }
+
+    .accesorios__container img{
+        width: 500px;
+    }
+
+    .nosotros__container img{
+        width: 500px;
+    }
+
+    .datos__title{
+        margin-top: 20px
+    }
+
+    .datos__cartas{
+        margin: 40px 0px;
+    }
+}
+
 
 
 
