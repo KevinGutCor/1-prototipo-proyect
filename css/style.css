@@ -6,9 +6,9 @@
     box-sizing: border-box;
 }
 
-h1{font-size: 2.3rem;}
-h2{font-size: 1.8rem;}
-h3{font-size: 1.4rem;}
+h1{font-size: 2.8rem;}
+h2{font-size: 2.1rem;}
+h3{font-size: 1.6rem;}
 p{font-size: 1.2rem;}
 a{text-decoration: none;}
 ul{list-style: none;}
@@ -18,6 +18,7 @@ ul{list-style: none;}
     color: white;
     padding: 8px 25px;
     font-size: 18px;
+    border-radius: 5px;
 }
 
 .btn__vmas:hover{
@@ -29,6 +30,7 @@ ul{list-style: none;}
     padding: 10px 30px;
     font-size: 20px;
     color: white;
+    border-radius: 5px;
 }
 
 .galeria__btn:hover{
@@ -42,8 +44,7 @@ ul{list-style: none;}
 body{
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: rgb(174,174,177);
-    background: linear-gradient(101deg, rgba(174,174,177,1) 0%, rgba(210,210,214,1) 53%, rgba(241,251,252,1) 100%);
+    background-color: rgb(245, 245, 245);
 }
 
 header{
@@ -55,11 +56,11 @@ header{
 
 .logo{
     font-family: 'Roboto', sans-serif;
-    padding: 10px 0;
+    padding: 7px 0;
 }
 
 .logo a{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
     font-style: italic;
 }
@@ -70,8 +71,8 @@ header{
     padding-bottom: 10px;
 }
 
-.header__nav a:hover{
-    background-color: rgb(25, 26, 26);
+.header__nav a{
+    font-size: 1.2rem;
 }
 
 .nosotros__btn{
@@ -261,8 +262,30 @@ header{
 .footer{
     background-color: black;
     color: white;
-    padding: 15px 0;
+    /* padding: 15px 0; */
     border-top: 5px solid yellow;
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__copy{
+    margin: 15px;
+}
+
+.footer__icons{
+    /* margin: 0px 10px 0px 10px; */
+    padding: 15px;
+    margin: 0px 10px;
+    border-bottom: 1px solid white;
+}
+
+.footer__img{
+    width: 36px;
+    margin: 0px 10px;
 }
 
 @media (min-width: 768px){
@@ -364,11 +387,28 @@ header{
         border-right: 1px solid black;
         border-left: 1px solid black;
     }
+
+    .footer__container{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .footer__icons{
+        border-bottom: none;
+    }
+
+    .footer__copy{
+        margin-left: 50px;
+    }
 }
 
 @media (min-width: 1024px){
     .header__nav a{
         padding: 20px 40px 21px 40px;
+    }
+    
+    .header__nav a:hover{
+        background-color: rgb(25, 26, 26);
     }
 
     .logo{
@@ -417,6 +457,8 @@ header{
         margin: 40px 0px;
     }
 }
+
+
 
 
 
