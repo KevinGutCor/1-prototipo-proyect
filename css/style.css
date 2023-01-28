@@ -289,7 +289,27 @@ header{
 }
 
 .locales__hero{
-    background-image: ;
+    background-image: url(../contenido/inicio-locales.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ubicacion__container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-bottom: 1px solid black;
+    margin: 30px 10px 30px 10px;
+}
+
+.ubicacion__paragraph{
+    margin-top: 30px;
+}
+
+.ubicacion__map{
+    width: 95%;
+    height: 300px;
+    margin: 50px 0;
 }
 
 @media (min-width: 768px){
@@ -459,6 +479,17 @@ header{
 
     .datos__cartas{
         margin: 40px 0px;
+    }
+
+    .ubicacion__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .ubicacion__map{
+        width: 85%;
+        height: 360px;
     }
 }
 
