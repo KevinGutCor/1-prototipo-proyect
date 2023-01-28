@@ -88,7 +88,7 @@ header{
 .hero__container{
     width: 80%;
     margin: 0 auto;
-    padding: 90px 0px;
+    padding: 65px 0px;
 }
 
 .hero__text{
@@ -168,7 +168,7 @@ header{
 .galeria__container{
     width: 85%;
     margin: 0 auto;
-    padding: 70px 0px;
+    padding: 50px 0px;
 }
 
 .galeria__text{
@@ -286,6 +286,10 @@ header{
 .footer__img{
     width: 36px;
     margin: 0px 10px;
+}
+
+.locales__hero{
+    background-image: ;
 }
 
 @media (min-width: 768px){
