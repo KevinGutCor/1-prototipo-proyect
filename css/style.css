@@ -88,7 +88,7 @@ header{
 .hero__container{
     width: 80%;
     margin: 0 auto;
-    padding: 65px 0px;
+    padding: 20px 0px;
 }
 
 .hero__text{
@@ -312,6 +312,39 @@ header{
     margin: 50px 0;
 }
 
+/* Seccion galeria */
+.galeria__hero{
+    background-image: url(https://images.unsplash.com/photo-1593014219861-cb9d9c1566a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGZvdG9ncmFmaWElMjBjYWxsZWplcmF8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+.sect-galeria__container{
+    margin: 10px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    border-bottom: 1px solid black;
+}
+
+.hero-galeria__container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+
+.sect-galeria__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+} 
+.sect-galeria__img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+
 @media (min-width: 768px){
     header{
         display: flex;
@@ -330,6 +363,12 @@ header{
 
     .header__nav a{
         padding-right: 30px;
+    }
+
+    .hero__container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 110px 0px;
     }
 
     .camara__container{
@@ -379,7 +418,6 @@ header{
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 20px 0px 40px 0px;
-
     }
 
     .nosotros__text{
@@ -423,6 +461,69 @@ header{
 
     .footer__copy{
         margin-left: 50px;
+    }
+
+    .hero-galeria__container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 135px 0px;
+    }
+
+    .sect-galeria__container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "img_1 img_2"
+        "img_3 img_3"
+        "img_11 img_14" 
+        "img_8 img_8"
+        "img_4 img_5"
+        "img_7 img_7"
+        "img_13 img_12"
+        "img_9 img_9"
+        "img_6 img_10";
+    }
+
+    .img_1{
+        grid-area: img_1;
+    }
+    .img_2{
+        grid-area: img_2;
+    }
+    .img_3{
+        grid-area: img_3;
+    }
+    .img_4{
+        grid-area: img_4;
+    }
+    .img_5{
+        grid-area: img_5;
+    }
+    .img_6{
+        grid-area: img_6;
+    }
+    .img_7{
+        grid-area: img_7;
+    }
+    .img_8{
+        grid-area: img_8;
+    }
+    .img_9{
+        grid-area: img_9;
+    }
+    .img_10{
+        grid-area: img_10;
+    }
+    .img_11{
+        grid-area: img_11;
+    }
+    .img_12{
+        grid-area: img_12;
+    }
+    .img_13{
+        grid-area: img_13;
+    }
+    .img_14{
+        grid-area: img_14;
     }
 }
 
@@ -490,6 +591,26 @@ header{
     .ubicacion__map{
         width: 85%;
         height: 360px;
+    }
+
+    .hero-galeria__container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 220px 0px;
+    }
+
+    .sect-galeria__container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "img_1  img_2   img_3"
+        "img_4  img_4   img_11"
+        "img_5  img_6   img_7"
+        "img_14 img_13  img_12"
+        "img_8  img_9  img_10"
+        ;
+    }
+    .sect-galeria__container{
+        margin: 60px;
     }
 }
 
